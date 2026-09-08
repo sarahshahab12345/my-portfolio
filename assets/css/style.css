@@ -928,13 +928,17 @@ section .container {
   right: 15px;
 }
 
-/* Additional styles for video elements */
+.portfolio .portfolio-wrap img,
 .portfolio .portfolio-wrap video {
   width: 100%;
-  height: auto;
+  height: 250px;
+  object-fit: cover;
+  display: block;
   transition: all 0.3s ease-in-out;
 }
 
+/* Hover effect */
+.portfolio .portfolio-wrap:hover img,
 .portfolio .portfolio-wrap:hover video {
   transform: scale(1.1);
 }
